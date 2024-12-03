@@ -1,0 +1,171 @@
+@import url(./reset.css);
+@import url("https://fonts.googleapis.com/css2?family=Alice&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Alice", serif;
+}
+
+root {
+  /* Surface colors */
+  --background-color: #573824;
+  --surface-color: #f0e8c2;
+  /* Text colors */
+
+  --text-color-primary: #291b1a;
+  --text-color-secondary: #573a37;
+  --text-color-on-bg: #f0e8c2;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: url(../assets/Página\ de\ receita.svg) lightgray 50% / cover
+    no-repeat;
+}
+
+#Container {
+  display: flex;
+  width: 50rem;
+  padding: 1.5rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+  border-radius: 1.5rem;
+  background-color: #f0e8c2;
+  img {
+    max-width: 100%;
+  }
+}
+
+main {
+  display: flex;
+  padding: 0rem 1.5rem 1.5rem 1.5rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+  align-self: stretch;
+
+  #About {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+    align-self: stretch;
+
+    h1 {
+      color: var(--text-color-primary);
+      font-variant-numeric: lining-nums tabular-nums;
+      font-feature-settings: "liga" off, "clig" off;
+      font-family: inherit;
+      font-size: 2.5rem;
+      font-weight: 400;
+      line-height: 140%; /* 56px */
+    }
+
+    .info {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.75rem;
+      align-self: stretch;
+
+      p {
+        color: var(--text-color-secondary);
+        font-variant-numeric: lining-nums tabular-nums;
+        font-feature-settings: "liga" off, "clig" off;
+        font-family: inherit;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 150%; /* 24px */
+      }
+    }
+  }
+
+  #Ingredientes {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+    align-self: stretch;
+
+    h1 {
+      color: var(--text-color-primary);
+      font-variant-numeric: lining-nums tabular-nums;
+      font-feature-settings: "liga" off, "clig" off;
+      font-family: inherit;
+      font-size: 1.5rem;
+      font-weight: 400;
+      line-height: 150%; /* 36px */
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      margin-left: 1.5rem;
+
+      li {
+        color: var(--text-color-secondary);
+        font-variant-numeric: lining-nums tabular-nums;
+        font-feature-settings: "liga" off, "clig" off;
+        font-family: inherit;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 150%; /* 24px */
+      }
+    }
+  }
+
+  #Modo-de-preparo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+    align-self: stretch;
+
+    h1 {
+      color: var(--text-color-primary);
+      font-variant-numeric: lining-nums tabular-nums;
+      font-feature-settings: "liga" off, "clig" off;
+      font-family: inherit;
+      font-size: 1.5rem;
+      font-weight: 400;
+      line-height: 150%; /* 36px */
+    }
+
+    p {
+      color: var(--text-color-secondary);
+      font-variant-numeric: lining-nums tabular-nums;
+      font-feature-settings: "liga" off, "clig" off;
+      font-family: inherit;
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 150%; /* 24px */
+    }
+  }
+}
+
+#Creditos {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+  margin: 1.75rem;
+
+  p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.25rem;
+
+    color: #f0e8c2;
+    font-variant-numeric: lining-nums tabular-nums;
+    font-feature-settings: "liga" off, "clig" off;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+  }
+}
